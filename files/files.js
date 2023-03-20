@@ -6,3 +6,7 @@ fs.readFile("./docs/blog1.txt", (err, data) => {
   }
   console.log(data.toString());
 });
+
+fs.writeFile("./docs/blog1.txt", "hello world", () => {
+  console.log("file was written");
+});
